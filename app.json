@@ -40,10 +40,10 @@
             "value": "Maruf",
             "required": true
         },
-        "kuch_nhi": {
+        "BOT_TOKEN": {
             "description": "",
             "value": "",
-            "required": false
+            "required": true
         }
     },
     "formation": {
