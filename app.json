@@ -1,51 +1,55 @@
 {
-    "name":"VideoDownloaderBot",
-    "description":"Download videos from various websites using this telegram bot",
-    "repository":"https://github.com/DaruaraFriends/VideoDownloaderBot",
-    "buildpacks":[
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-        },
-        {
-            "url": "https://github.com/amivin/aria2-heroku.git"
-        },
-        {
-            "url": "heroku/python"
-        }
+    "name": "Telegram",
+    "description": "You know what it does...",
+    "logo": "",
+    "keywords": [
+        "Telethon",
+        "telegram",
+        "python"
     ],
+    "repository": "https://github.com/",
+    "success_url": "https://t.me/Telegram",
+    "stack": "container",
     "env": {
-        "API_ID":{
-            "description": "Get your telegram API ID from https://my.telegram.org",
-            "value":""
+        "API_ID": {
+            "description": "You api id, from my.telegram.org or @ScrapperRoBot.",
+            "value": "3704772", 
+            "required": false
         },
-        "API_HASH":{
-            "description":"Get your telegram API HASH from https://my.telegram.org",
-		    "value":""
+        "API_HASH": {
+            "description": "You api hash, from my.telegram.org or @ScrapperRoBot.",
+            "value": "b8e50a035abb851c0dd424e14cac4c06",
+            "required": false
         },
-        "BOT_TOKEN":{
-            "description":"Get from BotFather",
-            "value":""
+        "SESSION": {
+            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+            "value": ""
         },
-        "AUTH_USERS":{
-            "description":"Admin/Owner/Friends ID Seperate by ','  Ex: 44578878,8878899",
-            "value":""
+        "REDIS_URI": {
+            "description": "Redis endpoint URL, from redislabs.com",
+            "value": "",
+            "required": false
         },
-        "GROUPS":{
-            "description":"Groups where to work",
-            "value":""
+        "REDIS_PASSWORD": {
+            "description": "Redis endpoint password, from redislabs.com",
+            "value": "",
+            "required": false
         },
-        "HTML_GROUPS":{
-            "description":"Group ID if you would like to add the bot in group.",
-            "value":""
+        "HEROKU_API": {
+            "description": "Heroku API token. Needed if deploying on heroku ONLY.",
+            "value": "",
+            "required": false
         },
-        "THUMB":{
-            "description":"(Thumbnail) Telegraph link or leave it default(Locky Lodu)",
-            "value":"thumb.jpg",
-            "required":false
-        },
-        "NAME":{
-            "description":"Credit",
-            "value":"I want no credit."
+        "HEROKU_APP_NAME": {
+            "description": "Name of your heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
+            "value": "",
+            "required": false
+        }
+    },
+    "formation": {
+        "main": {
+            "quantity": 1,
+            "size": "free"
         }
     }
 }
