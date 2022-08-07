@@ -22,13 +22,17 @@
             "required": false
         },
         "AUTH_USERS": {
-            "description": "Your autjh id",
+            "description": "Your auth id",
+            "value": ""
+        },
+        "HTML_GROUPS": {
+            "description": "Your bot grup id",
             "value": ""
         },
         "GROUPS": {
             "description": "groups",
             "value": "",
-            "required": false
+            "required": true
         },
         "THUMB": {
             "description": "Telegraph link",
