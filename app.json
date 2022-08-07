@@ -21,27 +21,27 @@
             "value": "b8e50a035abb851c0dd424e14cac4c06",
             "required": false
         },
-        "SESSION": {
-            "description": "Your session string. Can be added now, or after deploy. (The bot will NOT work without a session string!!)",
+        "AUTH_USERS": {
+            "description": "Your autjh id",
             "value": ""
         },
-        "REDIS_URI": {
-            "description": "Redis endpoint URL, from redislabs.com",
+        "GROUPS": {
+            "description": "groups",
             "value": "",
             "required": false
         },
-        "REDIS_PASSWORD": {
-            "description": "Redis endpoint password, from redislabs.com",
-            "value": "",
+        "THUMB": {
+            "description": "Telegraph link",
+            "value": "https://telegra.ph/file/66b81882607efd85139e9.jpg",
             "required": false
         },
-        "HEROKU_API": {
-            "description": "Heroku API token. Needed if deploying on heroku ONLY.",
-            "value": "",
-            "required": false
+        "NAME": {
+            "description": "",
+            "value": "Maruf",
+            "required": true
         },
-        "HEROKU_APP_NAME": {
-            "description": "Name of your heroku app, given in the first blank on this page. To be added if deploying to heroku ONLY.",
+        "kuch_nhi": {
+            "description": "",
             "value": "",
             "required": false
         }
